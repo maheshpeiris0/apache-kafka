@@ -16,6 +16,6 @@ producer = Producer(config)
 
 # Produce a message
 topic = 'poems'
-message = {'5': 'message from github'}
+message = {'5': 'message from gitlab'}
 producer.produce(topic, json.dumps(message))
 producer.flush()
