@@ -13,7 +13,7 @@ config = {
 
 # Create Consumer instance
 consumer = Consumer(config)
-consumer.subscribe(['poems'])
+consumer.subscribe(['topic_0'])
 
 # Poll messages
 while True:
