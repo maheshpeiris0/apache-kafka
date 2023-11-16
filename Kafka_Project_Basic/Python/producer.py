@@ -16,6 +16,6 @@ producer = Producer(config)
 
 # Produce a message
 topic = 'topic_0'
-message = {'3': 'message hello github'}
+message = {'3': 'message helloE github'}
 producer.produce(topic, json.dumps(message))
 producer.flush()

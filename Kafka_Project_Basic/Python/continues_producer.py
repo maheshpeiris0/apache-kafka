@@ -3,9 +3,10 @@ import json
 import os
 import random
 import uuid
+import time
 
 def random_data():
-    key =  random.randint(1,6)
+    key =  random.randint(0,5)
     value = uuid.uuid4().hex
     data = {'key':key,'value':value
     }
@@ -26,6 +27,9 @@ producer = Producer(config)
 
 # Produce a message
 topic = 'topic_0'
-message = {'5': 'message hello test'}
-producer.produce(topic, random_data())
-producer.flush()
+while True:
+    time.sleep(30)
+    kafka_msg = random_data()
+    print(kafka_msg)
+    producer.produce(topic, kafka_msg)
+    producer.flush()
