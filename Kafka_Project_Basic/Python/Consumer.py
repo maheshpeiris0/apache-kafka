@@ -2,11 +2,11 @@ from confluent_kafka import Consumer
 import os
 # Kafka configuration
 config = {
-    'bootstrap.servers': os.environ.get('BOOTSTRAP_SERVERS'), # Replace with your server
+    'bootstrap.servers': os.environ.get('BOOTSTRAP_SERVERS_CONFLUENT'), # Replace with your server
     'sasl.mechanisms': 'PLAIN',
     'security.protocol': 'SASL_SSL',
-    'sasl.username':  os.environ.get('SASL_USERNAME'),              # Replace with your API key
-    'sasl.password': os.environ.get('SASL_PASSWORD')  ,         # Replace with your API secret
+    'sasl.username':  os.environ.get('API_KEY_CONFLUENT'),              # Replace with your API key
+    'sasl.password': os.environ.get('API_SECRET_CONFLUENT')  ,         # Replace with your API secret
     'group.id': 'my_group',                                  # Consumer group ID
     'auto.offset.reset': 'earliest'
 }
