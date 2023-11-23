@@ -19,3 +19,9 @@ kafka-console-producer --topic quickstart-events --bootstrap-server localhost:90
 
 <br>
 kafka-console-consumer --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+
+<br>
+kafka-topics.sh --create --topic quickstart-events --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092
+
+<br>
+kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
