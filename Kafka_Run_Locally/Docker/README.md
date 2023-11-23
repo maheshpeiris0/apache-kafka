@@ -9,4 +9,6 @@ kafka-console-producer --topic <topic-name> --bootstrap-server localhost:9092
 <br>
 kafka-console-consumer --topic <topic-name> --from-beginning --bootstrap-server localhost:9092
 
+<br>
+docker exec -it kafka1 /bin/bash
 
