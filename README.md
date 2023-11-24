@@ -8,3 +8,5 @@
 ### Run Kafka locally
 
 https://kafka.apache.org/quickstart
+
+https://hub.docker.com/r/bitnami/kafka
