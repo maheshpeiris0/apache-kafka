@@ -28,4 +28,5 @@ kafka-topics.sh --create --topic quickstart-events --partitions 1 --replication-
 
 <br>
 kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+<br>
 kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
