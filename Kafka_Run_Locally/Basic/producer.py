@@ -24,3 +24,5 @@ try:
 finally:
     # Wait for any outstanding messages to be delivered and delivery report callbacks to be triggered.
     producer.flush(30)
+
+
