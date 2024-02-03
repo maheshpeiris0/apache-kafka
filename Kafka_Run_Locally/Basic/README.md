@@ -8,7 +8,9 @@ sudo apt-get install openjdk-8-jdk
 
 ### Download the Kafka
 
-https://www.apache.org/dyn/closer.cgi?path=/kafka/3.6.0/kafka_2.13-3.6.0.tgz
+https://www.apache.org/dyn/closer.cgi?path=/kafka/3.6.0/kafka_2.13-3.6.0.tgz 3 web link
+<br>
+wget https://dlcdn.apache.org/kafka/3.6.0/kafka_2.13-3.6.0.tgz # working
 
 $ tar -xzf kafka_2.13-3.6.0.tgz
 $ cd kafka_2.13-3.6.0
