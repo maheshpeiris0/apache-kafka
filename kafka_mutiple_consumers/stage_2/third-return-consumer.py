@@ -72,7 +72,7 @@ if __name__ == '__main__':
     output_topic_name = 'positive-returns'
     
     # Path to the Parquet file in GCS
-    file_path = 'gs://test-data-bucket-mp/stock-data.parquet'
+    file_path = 'file_path'
     old_prices = read_old_prices_from_parquet(file_path)
     
     consume_messages(consumer, producer, input_topic_name, output_topic_name, old_prices)
