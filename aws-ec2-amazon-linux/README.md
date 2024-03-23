@@ -16,3 +16,6 @@ docker-compose version
 sudo yum update
 <br>
 sudo yum install git
+
+<br>
+sudo yum -y install python-pip
