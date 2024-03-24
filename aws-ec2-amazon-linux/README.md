@@ -19,3 +19,8 @@ sudo yum install git
 
 <br>
 sudo yum -y install python-pip
+<br>
+
+#### Docker compose file
+
+https://www.conduktor.io/kafka/how-to-start-kafka-using-docker/
