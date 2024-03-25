@@ -24,3 +24,7 @@ sudo yum -y install python-pip
 #### Docker compose file
 
 https://www.conduktor.io/kafka/how-to-start-kafka-using-docker/
+
+<br>
+
+aws s3 cp data s3://my-s3-bucket/backup --recursive
