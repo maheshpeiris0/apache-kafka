@@ -4,7 +4,7 @@ import gspread
 import json
 import pandas as pd
 
-secret_name = "my-google-github-sa"
+secret_name = "secret-name"
 region_name = "us-east-1"
 
 session = boto3.session.Session()
@@ -24,7 +24,7 @@ except ClientError as e:
 secret = get_secret_value_response['SecretString']
 key_data = json.loads(secret)
 gc = gspread.service_account_from_dict(key_data)
-sht1 = gc.open_by_key('1dsYt-kroqo9neVpV_VeJewNIt-mOzTdrPUq6nx5-Z-w')
+sht1 = gc.open_by_key('google_sheet_id')
 worksheet = sht1.worksheet("Stock-list")
 list_of_dicts = worksheet.get_all_records()
 df=pd.DataFrame(list_of_dicts)
