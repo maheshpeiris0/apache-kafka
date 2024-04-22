@@ -1,0 +1,11 @@
+version: '3.7'  # It's a good idea to specify version for compatibility
+
+services:
+  my-application:
+    build: .  # This points to the Dockerfile in the same directory
+    networks:
+      - kafka-network
+
+networks:
+  kafka-network:
+    external: true
